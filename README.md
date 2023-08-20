@@ -10,7 +10,7 @@ This started as a NestJS REST API boilerplate from [here](https://github.com/bro
 ## Branches
 
 - `main` - is left along so that I can easily pull in updates from the originally forked repository.
-- `ct-unstabe` - is my working branch where I try new ideas.
+- `ct-unstable` - is my working branch where I try new ideas.
 - `ct-stable` - is where I push code once I'm happy with it. This is the 'master' branch.
 
 [Full documentation here](https://github.com/brocoders/nestjs-boilerplate/blob/main/docs/readme.md)
