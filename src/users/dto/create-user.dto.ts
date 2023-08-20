@@ -32,6 +32,10 @@ export class CreateUserDto {
 
   socialId?: string | null;
 
+  bchAddress?: string | null;
+
+  privateKey?: string | null;
+
   @ApiProperty({ example: 'John' })
   @IsNotEmpty()
   firstName: string | null;

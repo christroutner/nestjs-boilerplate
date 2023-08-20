@@ -37,6 +37,14 @@ export class User extends EntityHelper {
   @Exclude({ toPlainOnly: true })
   public previousPassword: string;
 
+  @Column({ type: String, unique: true, nullable: true })
+  @Expose({ groups: ['me', 'admin'] })
+  bchAddress: string | null;
+
+  @Column({ type: String, unique: true, nullable: true })
+  @Expose({ groups: ['me', 'admin'] })
+  privateKey: string | null;
+
   @AfterLoad()
   public loadPreviousPassword(): void {
     this.previousPassword = this.password;

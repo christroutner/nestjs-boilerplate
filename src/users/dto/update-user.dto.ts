@@ -30,6 +30,10 @@ export class UpdateUserDto extends PartialType(CreateUserDto) {
 
   socialId?: string | null;
 
+  bchAddress?: string | null;
+
+  privateKey?: string | null;
+
   @ApiProperty({ example: 'John' })
   @IsOptional()
   firstName?: string | null;

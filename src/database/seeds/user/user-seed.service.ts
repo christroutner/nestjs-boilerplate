@@ -28,6 +28,8 @@ export class UserSeedService {
           lastName: 'Admin',
           email: 'admin@example.com',
           password: 'secret',
+          bchAddress: 'bitcoincash:qq2yu5rcd5tpyj4m2perezaa0sz9z2qzs5x3049l4l',
+          privateKey: 'Kybkhwny5m4hcpmKLPf5TBcLeae6yJqsVb3U8MqAnherGJt5Psf6',
           role: {
             id: RoleEnum.admin,
             name: 'Admin',
@@ -55,6 +57,8 @@ export class UserSeedService {
           lastName: 'Doe',
           email: 'john.doe@example.com',
           password: 'secret',
+          bchAddress: 'bitcoincash:qpv6e8xf6chmgu350wtkpm0wc6ue4aa8vq9h38dfd7',
+          privateKey: 'KzWKiHJtL7ZnE3nneHt3SBY44jNBujcEfr4zBhjhLc8fGM8JQ7bv',
           role: {
             id: RoleEnum.user,
             name: 'Admin',
