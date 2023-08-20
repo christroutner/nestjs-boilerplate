@@ -37,14 +37,6 @@ export class User extends EntityHelper {
   @Exclude({ toPlainOnly: true })
   public previousPassword: string;
 
-  @Column({ type: String, unique: true, nullable: true })
-  @Expose({ groups: ['me', 'admin'] })
-  bchAddress: string | null;
-
-  @Column({ type: String, unique: true, nullable: true })
-  @Expose({ groups: ['me', 'admin'] })
-  privateKey: string | null;
-
   @AfterLoad()
   public loadPreviousPassword(): void {
     this.previousPassword = this.password;
@@ -67,6 +59,14 @@ export class User extends EntityHelper {
   @Column({ type: String, nullable: true })
   @Expose({ groups: ['me', 'admin'] })
   socialId: string | null;
+
+  @Index()
+  @Column({ type: String, nullable: true })
+  bchAddress: string | null;
+
+  @Index()
+  @Column({ type: String, nullable: true })
+  privateKey: string | null;
 
   @Index()
   @Column({ type: String, nullable: true })
